@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Blog Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="margin:0; font-family: 'Segoe UI', Arial, sans-serif; background:#f9f9f6; color:#222;">
+
+    <!-- Header -->
+    <header style="background:#2e5d34; color:#fff; padding:1.5em 1em; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;">
+        <div style="font-size:2em; font-weight:bold; letter-spacing:2px;">🌍 MyLan</div>
+        <nav>
+            <a href="#" style="color:#fff; text-decoration:none; margin:0 1em; font-size:1em;">Home</a>
+            <a href="#" style="color:#fff; text-decoration:none; margin:0 1em; font-size:1em;">Destinations</a>
+            <a href="#" style="color:#fff; text-decoration:none; margin:0 1em; font-size:1em;">Tips</a>
+            <a href="#" style="color:#fff; text-decoration:none; margin:0 1em; font-size:1em;">About</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="display:flex; flex-direction:column; gap:2em; max-width:1200px; margin:0 auto; padding:1em;">
+
+        <!-- Featured Post -->
+        <section style="display:flex; flex-direction:column; background:#eaf6f6; border-radius:1em; overflow:hidden; box-shadow:0 2px 8px rgba(44,62,80,0.07); margin-top:1em;">
+            <img src="Featured.png" alt="Featured Destination" style="width:100%; max-height:320px; object-fit:cover;">
+            <div style="padding:1.5em;">
+                <h1 style="margin:0 0 0.5em 0; font-size:2em; color:#2e5d34;">Exploring the Blue Lagoons of Iceland</h1>
+                <p style="font-size:1.1em; color:#444; margin:0;">Join me as I soak in the geothermal wonders, chase waterfalls, and discover the magic of Iceland’s blue lagoons. A journey through nature’s most stunning spa!</p>
+            </div>
+        </section>
+
+        <!-- Content Grid -->
+        <div style="display:flex; flex-direction:column; gap:2em; width:100%;">
+
+            <!-- Recent Posts -->
+            <section style="flex:2;">
+                <h2 style="font-size:1.5em; color:#2e5d34; margin-bottom:1em;">Recent Posts</h2>
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:1.5em;">
+                    <!-- Card 1 -->
+                    <div class="card" style="background:#fff; border-radius:0.8em; box-shadow:0 1px 6px rgba(44,62,80,0.07); overflow:hidden; display:flex; flex-direction:column; transition:transform 0.2s;">
+                        <img src="HikingtheAndes.jpg" alt="Post 1" style="width:100%; height:140px; object-fit:cover;">
+                        <div style="padding:1em;">
+                            <h3 style="margin:0 0 0.5em 0; font-size:1.1em; color:#2e5d34;">Hiking the Andes</h3>
+                            <a href="#" style="color:#1e7fa3; text-decoration:none; font-size:0.95em;">Read more</a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card" style="background:#fff; border-radius:0.8em; box-shadow:0 1px 6px rgba(44,62,80,0.07); overflow:hidden; display:flex; flex-direction:column; transition:transform 0.2s;">
+                        <img src="SafariinKenya.jpg" alt="Post 2" style="width:100%; height:140px; object-fit:cover;">
+                        <div style="padding:1em;">
+                            <h3 style="margin:0 0 0.5em 0; font-size:1.1em; color:#2e5d34;">Safari in Kenya</h3>
+                            <a href="#" style="color:#1e7fa3; text-decoration:none; font-size:0.95em;">Read more</a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card" style="background:#fff; border-radius:0.8em; box-shadow:0 1px 6px rgba(44,62,80,0.07); overflow:hidden; display:flex; flex-direction:column; transition:transform 0.2s;">
+                        <img src="StreetFoodinBangkok.png" alt="Post 3" style="width:100%; height:140px; object-fit:cover;">
+                        <div style="padding:1em;">
+                            <h3 style="margin:0 0 0.5em 0; font-size:1.1em; color:#2e5d34;">Street Food in Bangkok</h3>
+                            <a href="#" style="color:#1e7fa3; text-decoration:none; font-size:0.95em;">Read more</a>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="card" style="background:#fff; border-radius:0.8em; box-shadow:0 1px 6px rgba(44,62,80,0.07); overflow:hidden; display:flex; flex-direction:column; transition:transform 0.2s;">
+                        <img src="SailingtheGreekIsles.jpg" alt="Post 4" style="width:100%; height:140px; object-fit:cover;">
+                        <div style="padding:1em;">
+                            <h3 style="margin:0 0 0.5em 0; font-size:1.1em; color:#2e5d34;">Sailing the Greek Isles</h3>
+                            <a href="#" style="color:#1e7fa3; text-decoration:none; font-size:0.95em;">Read more</a>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="card" style="background:#fff; border-radius:0.8em; box-shadow:0 1px 6px rgba(44,62,80,0.07); overflow:hidden; display:flex; flex-direction:column; transition:transform 0.2s;">
+                        <img src="AmazonRainforestTrek.png" alt="Post 5" style="width:100%; height:140px; object-fit:cover;">
+                        <div style="padding:1em;">
+                            <h3 style="margin:0 0 0.5em 0; font-size:1.1em; color:#2e5d34;">Amazon Rainforest Trek</h3>
+                            <a href="#" style="color:#1e7fa3; text-decoration:none; font-size:0.95em;">Read more</a>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="card" style="background:#fff; border-radius:0.8em; box-shadow:0 1px 6px rgba(44,62,80,0.07); overflow:hidden; display:flex; flex-direction:column; transition:transform 0.2s;">
+                        <img src="RoadTripAcrossCanada.jpg" alt="Post 6" style="width:100%; height:140px; object-fit:cover;">
+                        <div style="padding:1em;">
+                            <h3 style="margin:0 0 0.5em 0; font-size:1.1em; color:#2e5d34;">Road Trip Across Canada</h3>
+                            <a href="#" style="color:#1e7fa3; text-decoration:none; font-size:0.95em;">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sidebar -->
+            <aside style="flex:1; background:#f4f1ee; border-radius:1em; padding:1.5em; margin-top:2em; max-width:340px;">
+                <div style="display:flex; align-items:center; gap:1em; margin-bottom:1.5em;">
+                    <img src="sinchan.jpg" alt="Blogger" style="width:64px; height:64px; border-radius:50%; object-fit:cover; border:2px solid #2e5d34;">
+                    <div>
+                        <div style="font-weight:bold; color:#2e5d34;">Sheryn, Aryan, Umeshwar</div>
+                        <div style="font-size:0.95em; color:#555;">Web Developers</div>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="margin:0 0 0.5em 0; color:#2e5d34;">Categories</h4>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="margin-bottom:0.5em;"><a href="#" style="color:#1e7fa3; text-decoration:none;">Adventure</a></li>
+                        <li style="margin-bottom:0.5em;"><a href="#" style="color:#1e7fa3; text-decoration:none;">Culture</a></li>
+                        <li style="margin-bottom:0.5em;"><a href="#" style="color:#1e7fa3; text-decoration:none;">Nature</a></li>
+                        <li style="margin-bottom:0.5em;"><a href="#" style="color:#1e7fa3; text-decoration:none;">Food</a></li>
+                        <li><a href="#" style="color:#1e7fa3; text-decoration:none;">Guides</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+      <div style="text-align:center; font-size:0.95em; color:#b2d8c7; margin-top:1em;">
+                &copy; 2024 MyLan. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        style="position:fixed; right:1em; bottom:1.5em; background:#1e7fa3; color:#fff; border:none; border-radius:50%; width:2.5em; height:2.5em; font-size:1.3em; box-shadow:0 2px 8px rgba(44,62,80,0.15); cursor:pointer; z-index:100;">
+        ↑
+    </button>
+
+</body>
+</html>
