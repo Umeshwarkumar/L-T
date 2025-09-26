@@ -1,0 +1,188 @@
+/* css/style.css */
+
+/* 1. General Theme & Spotify-like Body
+   ----------------------------------------- */
+body {
+    background-color: #121212;
+    color: #b3b3b3;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    cursor: none; /* Hide the default browser cursor */
+}
+
+/* 2. Typography & Headers
+   ----------------------------------------- */
+main > header h1 {
+    font-weight: 900;
+    color: #ffffff;
+}
+
+/* 3. Navigation
+   ----------------------------------------- */
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff;
+}
+.navbar {
+    background-color: #000000 !important;
+}
+
+/* 4. Filter & Search Section (Inputs)
+   ----------------------------------------- */
+.form-control, .form-select {
+    background-color: #282828;
+    border: 1px solid transparent;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.form-control::placeholder {
+    color: #888888;
+}
+.form-control:focus, .form-select:focus {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #4169E1;
+    box-shadow: 0 0 0 2px rgba(65, 105, 225, 0.5);
+}
+
+/* 5. Playlist Cards (Spotify Style)
+   ----------------------------------------- */
+.playlist-card {
+    background-color: #181818;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.4s ease, opacity 0.4s ease;
+    overflow: hidden;
+}
+
+.playlist-card:hover {
+    background-color: #282828;
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.playlist-card.clicked {
+    transform: scale(1.2); /* Enlarge the card more */
+    opacity: 0; /* Fade it out */
+}
+
+/* This new rule ensures the link fills the card and inherits text color */
+.playlist-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.playlist-card .card-img-top {
+    padding: 0;
+}
+
+.playlist-card .card-body {
+    padding: 1.25rem;
+}
+
+.playlist-card .card-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.playlist-card .card-text {
+    color: #b3b3b3;
+    font-size: 0.9rem;
+}
+
+/* 6. Details Page & Tables
+   ----------------------------------------- */
+#playlist-cover {
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-hover-bg: #2a2a2a;
+    --bs-table-color: #cccccc;
+    --bs-table-border-color: #333333;
+}
+
+thead th {
+    color: #888888;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    color: #888888;
+    transition: color 0.2s ease;
+    font-size: 1.2rem;
+}
+
+.action-btn:hover {
+    color: #ffffff;
+}
+.action-btn.btn-remove:hover {
+    color: #4169E1;
+}
+
+/* Style for the currently playing song row */
+.table-hover > tbody > tr.now-playing,
+.table-hover > tbody > tr.now-playing:hover {
+    background-color: rgba(65, 105, 225, 0.25);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Style for the audio player */
+#audio-player {
+    border-radius: 5px;
+}
+
+/* 8. Custom Glowing Cursor Effect
+   ----------------------------------------- */
+.custom-cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s, background-color 0.2s;
+    z-index: 10000;
+}
+
+.custom-cursor::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(10px);
+    opacity: 0.6;
+    z-index: -1;
+    transition: width 0.2s, height 0.2s, opacity 0.2s, filter 0.2s;
+}
+
+.custom-cursor.active {
+    width: 12px;
+    height: 12px;
+}
+.custom-cursor.active::before {
+    width: 40px;
+    height: 40px;
+    filter: blur(18px);
+    opacity: 0.8;
+}
